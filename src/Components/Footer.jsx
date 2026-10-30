@@ -56,7 +56,7 @@ const Footer = ({ setPadgs }) => {
             <li>
               <button
                 className="site-footer-link"
-                onClick={() => setPadgs("الاقترحات")}
+                onClick={() => setPadgs("الاقتراحات")}
               >
                 <i className="fa-solid fa-lightbulb"></i> ابعت اقتراح
               </button>
