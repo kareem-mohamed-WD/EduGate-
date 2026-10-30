@@ -16,7 +16,7 @@ const Navbar = ({ padgs, setPadgs }) => {
     <nav className="custom-navbar">
       <div className="navbar-container">
         <button className="menu-btn" onClick={() => setIsOpen(!isOpen)}>
-          <i className="fa-solid fa-bars"></i>
+          <i className={`fa-solid ${isOpen ? "fa-xmark" : "fa-bars"}`}></i>{" "}
         </button>
         <div className="navbar-brand" onClick={() => setPadgs("الرئيسية")}>
           <img
