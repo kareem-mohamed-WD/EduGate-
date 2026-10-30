@@ -2,22 +2,24 @@ import { useState } from "react";
 
 const Navbar = ({ padgs, setPadgs }) => {
   const [isOpen, setIsOpen] = useState(false);
-  const links = ["الاقترحات", "الشكاوى", "الجداول", "الإعلانات", "الرئيسية"];
 
   const linkIcons = {
-    الاقترحات: "fa-lightbulb",
-    الشكاوى: "fa-comment-dots",
-    الجداول: "fa-calendar-days",
-    الإعلانات: "fa-bullhorn",
     الرئيسية: "fa-house",
+    الإعلانات: "fa-bullhorn",
+    الجداول: "fa-calendar-days",
+    الشكاوى: "fa-comment-dots",
+    الاقتراحات: "fa-lightbulb",
   };
+
+  const links = Object.keys(linkIcons);
 
   return (
     <nav className="custom-navbar">
       <div className="navbar-container">
         <button className="menu-btn" onClick={() => setIsOpen(!isOpen)}>
-          <i className={`fa-solid ${isOpen ? "fa-xmark" : "fa-bars"}`}></i>{" "}
+          <i className={`fa-solid ${isOpen ? "fa-xmark" : "fa-bars"}`}></i>
         </button>
+
         <div className="navbar-brand" onClick={() => setPadgs("الرئيسية")}>
           <img
             className="Website-icon"
