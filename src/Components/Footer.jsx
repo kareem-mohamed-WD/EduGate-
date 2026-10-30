@@ -11,10 +11,12 @@ const Footer = ({ setPadgs }) => {
         {/* العمود الأول: عن البوابة */}
         <div className="site-footer-col site-footer-about">
           <div className="site-footer-brand">
-            <i className="fa-solid fa-graduation-cap"></i>
-            <span>EduGate</span>
-            <span className="brand-divider">|</span>
-            <span className="brand-subtitle">البوابة الطلابية</span>
+            <img
+              className="Website-icon"
+              src="Website icon.png"
+              alt="Website icon"
+            />
+            <span>EduGate | البوابة الطلابية</span>
           </div>
           <p className="site-footer-text">
             مكان واحد تعرف منه جدولك وآخر الإعلانات، وتقدر تبعت شكواك أو اقتراحك
@@ -66,7 +68,7 @@ const Footer = ({ setPadgs }) => {
       {/* الشريط السفلي */}
       <div className="site-footer-bottom">
         <span>
-          <i className="fa-regular fa-copyright"></i> {new Date().getFullYear()}{" "}
+          <i className="fa-regular fa-copyright"></i> {new Date().getFullYear()}
           EduGate | البوابة الطلابية. جميع الحقوق محفوظة.
         </span>
       </div>

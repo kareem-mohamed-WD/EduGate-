@@ -19,10 +19,12 @@ const Navbar = ({ padgs, setPadgs }) => {
           <i className="fa-solid fa-bars"></i>
         </button>
         <div className="navbar-brand" onClick={() => setPadgs("الرئيسية")}>
-          <i className="fa-solid fa-graduation-cap"></i>
-          <span>EduGate</span>
-          <span className="brand-divider">|</span>
-          <span className="brand-subtitle">البوابة الطلابية</span>
+          <img
+            className="Website-icon"
+            src="Website icon.png"
+            alt="Website icon"
+          />
+          <span>EduGate | البوابة الطلابية</span>
         </div>
 
         <ul className={`nav-menu ${isOpen ? "open" : ""}`}>
