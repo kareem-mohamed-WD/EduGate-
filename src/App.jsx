@@ -16,7 +16,7 @@ function App() {
       {padgs === "الرئيسية" && <Hero setPadgs={setPadgs} />}
       {padgs === "الإعلانات" && <Announcements />}
       {padgs === "الشكاوى" && <ComplaintsSection />}
-      {padgs === "الاقترحات" && <SuggestionsSection />}
+      {padgs === "الاقتراحات" && <SuggestionsSection />}
       {padgs === "الجداول" && <SchedulesSection />}
       {/* ملاحظة الفوتر */}
       <Footer setPadgs={setPadgs} />
